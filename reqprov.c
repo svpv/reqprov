@@ -246,7 +246,7 @@ int compare_version_requirement(int tag,
     else if (sense2)
 	vcmp = -1;
 
-    /* interpret version comparison with sense sense */
+    /* interpret version comparison with sense */
     switch (tag) {
     case RPMTAG_REQUIREVERSION:
 	return compare_sense(0, vcmp, rcmp, sense1, sense2);
